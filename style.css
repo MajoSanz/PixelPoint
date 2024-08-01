@@ -50,10 +50,12 @@ header {
 }
 
 .letra-cambia {
-    background: linear-gradient(to right,rgb(199, 33, 33), rgb(213, 22, 22),rgb(0, 0, 0)); 
+    background: linear-gradient(to right,rgb(199, 33, 33), rgb(213, 22, 22),rgb(202, 107, 107)); 
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    font-size: 65px; /* Ajusta el tamaño según prefieras */
+
 
 }
 
@@ -62,6 +64,8 @@ header {
         -webkit-text-fill-color: transparent;
         background-clip: text;  
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+        font-size: 65px; /* Ajusta el tamaño según prefieras */
+
   
 }
 
