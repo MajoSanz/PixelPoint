@@ -12,6 +12,21 @@ h1, h2, h3, h4, h5, h6, p, a, li, div, span {
     font-family: inherit; /* Hereda la fuente del body */
 }
 
+.justificado {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1500px; /* Ajusta el ancho según tus necesidades */
+    font-size: 30px; /* Ajusta el tamaño según prefieras */
+    line-height: 1.8; /* Ajusta la altura de línea para mejorar la legibilidad */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+}
+
 /* Texto para enlaces */
 .text-superior {
     color: #C21602;
@@ -34,10 +49,20 @@ header {
     opacity: 0.9;
 }
 
+.letra-cambia {
+    background: linear-gradient(to right,rgb(199, 33, 33), rgb(213, 22, 22),rgb(0, 0, 0)); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+
+}
+
 .letra-color {
         background: linear-gradient(to right,rgb(247, 240, 240), rgb(255, 255, 255),rgb(255, 255, 255)); 
         -webkit-text-fill-color: transparent;
-        background-clip: text;    
+        background-clip: text;  
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+  
 }
 
 /* Define el margen para el contenedor principal */
