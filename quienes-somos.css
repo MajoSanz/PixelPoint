@@ -1,0 +1,118 @@
+/* Aplica la fuente 'Barlow Condensed' a todo el documento */
+body {
+    font-family: 'Barlow Condensed', sans-serif; /* Define la fuente principal del documento */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    line-height: 1.5; /* Establece la altura de línea para mejorar la legibilidad */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del tamaño del elemento */
+}
+
+/* Asegura que todos los textos hereden la fuente del body */
+h1, h2, h3, h4, h5, h6, p, a, li, div, span {
+    font-family: inherit; /* Hereda la fuente del body */
+    color: #000; /* Color del texto en negro */
+    justify-content: justify; /* Justifica el contenido, aunque no afecta a elementos en línea */
+}
+
+.justificado {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Centra el elemento horizontalmente con márgenes automáticos */
+    max-width: 1500px; /* Establece un ancho máximo del contenedor */
+    font-size: 30px; /* Tamaño de la fuente */
+    line-height: 1.8; /* Altura de línea para mejorar la legibilidad */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Aplica una sombra al texto */
+    margin-bottom: 30px; /* Espacio debajo del elemento */
+}
+
+/* Texto para enlaces */
+.text-superior {
+    color: #C21602; /* Color de texto en rojo */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+.color-precio {
+    color: #C21602; /* Color de texto en rojo */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+.contenido {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.letra {
+    font-size: 22px; /* Tamaño de la fuente */
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+.titulo {
+    font-size: 24px; /* Tamaño de la fuente */
+    text-align: justify; /* Justifica el texto */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+.main-container {
+    max-width: 1200px; /* Establece un ancho máximo del contenedor */
+    margin: 3cm auto 0; /* Margen superior de 3 cm y centrado horizontal */
+    padding: 0 20px; /* Relleno interno de 20 px a los lados */
+}
+
+.letra-titulo {
+    font-size: 150%; /* Tamaño de la fuente en porcentaje */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Alinea el contenido en el centro verticalmente en un contenedor flex */
+    margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+.titulo-equipo {
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+.container {
+    text-align: center; /* Centra el texto y el contenido dentro del contenedor */
+    padding: 0 2cm; /* Relleno interno de 2 cm a los lados */
+}
+
+.texto-justificado {
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra el contenido del contenedor flex horizontalmente */
+    text-align: justify; /* Justifica el texto dentro del contenedor */
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: #C21602 !important; /* Establece el color de fondo rojo */
+    color: #000000 !important; /* Establece el color del texto en negro */
+}
+
+.derechos {
+    background-color: #C21602 !important; /* Establece el color de fondo rojo */
+    color: #000000 !important; /* Establece el color del texto en negro */
+    padding: 30px 0; /* Espacio arriba y abajo del contenedor */
+}
+
+.social-icons {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px; /* Espacio entre los iconos */
+    padding: 30px 0; /* Espacio arriba y abajo del contenedor */
+    background-color: #C21602; /* Establece el color de fondo rojo */
+}
+
+.social-icons a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del elemento padre */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves para el cambio de tamaño y color */
+}
+
+.iconos {
+    font-size: 50px; /* Tamaño de los iconos */
+}
+
+.social-icons a:hover .iconos {
+    transform: scale(1.3); /* Aumenta el tamaño de los iconos al pasar el ratón */
+    color: #ffffff; /* Cambia el color de los iconos al blanco */
+}
