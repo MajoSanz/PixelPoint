@@ -30,11 +30,6 @@ h1, h2, h3, h4, h5, h6, p, a, li, div, span {
     font-weight: bold; /* Hace que el texto sea negrita */
 }
 
-.color-precio {
-    color: #C21602; /* Color de texto en rojo */
-    font-weight: bold; /* Hace que el texto sea negrita */
-}
-
 .contenido {
     display: flex; /* Usa flexbox para el diseño */
     justify-content: center; /* Centra el contenido horizontalmente */
@@ -64,10 +59,6 @@ h1, h2, h3, h4, h5, h6, p, a, li, div, span {
     text-align: center; /* Centra el texto horizontalmente */
     align-items: center; /* Alinea el contenido en el centro verticalmente en un contenedor flex */
     margin-bottom: 0; /* Elimina el margen inferior */
-}
-
-.titulo-equipo {
-    font-weight: bold; /* Hace que el texto sea negrita */
 }
 
 .container {

@@ -1,157 +1,125 @@
 /* Aplica la fuente 'Barlow Condensed' a todo el documento */
 body {
-    font-family: 'Barlow Condensed', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5; /* Espaciado de línea */
-    box-sizing: border-box; /* Asegura que el padding y border no aumenten el tamaño del elemento */
+    font-family: 'Barlow Condensed', sans-serif; /* Define la fuente para el texto del documento */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el padding predeterminado del cuerpo */
+    line-height: 1.5; /* Establece el espaciado de línea para mejorar la legibilidad */
+    box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el tamaño del elemento */
 }
 
 /* Asegura que todos los textos hereden la fuente del body */
 h1, h2, h3, h4, h5, h6, p, a, li, div, span {
-    font-family: inherit; /* Hereda la fuente del body */
+    font-family: inherit; /* Hereda la fuente definida en el body */
 }
 
+/* Estilo para elementos con la clase 'justificado' */
 .justificado {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1500px; /* Ajusta el ancho según tus necesidades */
-    font-size: 30px; /* Ajusta el tamaño según prefieras */
-    line-height: 1.8; /* Ajusta la altura de línea para mejorar la legibilidad */
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
-    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    text-align: center; /* Centra el texto */
+    margin: 0 auto; /* Centra el bloque de texto dentro de su contenedor */
+    max-width: 1500px; /* Define un ancho máximo para el contenedor */
+    font-size: 30px; /* Tamaño de fuente personalizado */
+    line-height: 1.8; /* Altura de línea para una mejor legibilidad */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Aplica una sombra al texto */
+    margin-bottom: 30px; /* Espacio debajo del elemento */
 }
 
+/* Contenedor con flexbox para centrar su contenido */
 .contenido {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Utiliza el modelo de diseño flexbox */
+    justify-content: center; /* Centra el contenido horizontalmente */
 }
 
-/* Texto para enlaces */
+/* Estilo para textos con la clase 'text-superior' */
 .text-superior {
-    color: #C21602;
-    font-weight: bold; /* Hace que el texto de los enlaces esté en negritas */
+    color: #C21602; /* Color del texto */
+    font-weight: bold; /* Establece el texto en negrita */
 }
 
+/* Estilo para textos con la clase 'color-precio' */
 .color-precio {
-    color: #C21602;
-    font-weight: bold; /* Hace que el texto de los enlaces esté en negritas */
+    color: #C21602; /* Color del texto */
+    font-weight: bold; /* Establece el texto en negrita */
 }
 
-header {
-    background-image: url("Images/fondo1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    position: relative;
-    opacity: 0.9;
-}
-
-.letra-cambia {
-    background: linear-gradient(to right,rgb(199, 33, 33), rgb(213, 22, 22),rgb(202, 107, 107)); 
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
-    font-size: 65px; /* Ajusta el tamaño según prefieras */
-}
-
-.letra-color {
-    background: linear-gradient(to right,rgb(247, 240, 240), rgb(255, 255, 255),rgb(255, 255, 255)); 
-    -webkit-text-fill-color: transparent;
-    background-clip: text;  
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
-    font-size: 65px; /* Ajusta el tamaño según prefieras */
-
-}
-
-/* Define el margen para el contenedor principal */
+/* Contenedor principal con un ancho máximo */
 .main-container {
-    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
-    margin: 3cm auto 0; /* Centra el contenedor horizontalmente */
-    padding: 0 20px; /* Ajusta el relleno interno para el margen */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 3cm auto 0; /* Centra el contenedor horizontalmente con un margen superior */
+    padding: 0 20px; /* Padding interno para el margen */
 }
 
-/* Asegura que el contenedor abarque todo el ancho de la pantalla */
-.message {
-    margin: 50px 0; /* Espacio de 50px arriba y abajo */
-    padding: 50px 0; /* Espacio de 20px arriba y abajo dentro del contenedor */
-    width: 100vw; /* Ocupa el 100% del ancho de la ventana de visualización */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box; /* Incluye padding en el tamaño total */
-    background-color: #bf0603;
-    color: antiquewhite;
-}
-
+/* Estilo para títulos */
 .letra-titulo {
-    font-size: 150%;
-    text-align: center; /* Justifica el texto */
-    align-items: center;
+    font-size: 150%; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    align-items: center; /* Alinea el contenido al centro */
 }   
 
+/* Estilo para títulos de equipos */
 .titulo-equipo {
-    font-weight: bold;
+    font-weight: bold; /* Establece el texto en negrita */
 }
 
+/* Contenedor centrado */
 .container {
-    text-align: center; /* Centra el contenedor si es necesario */
-    padding: 0 2cm;
+    text-align: center; /* Centra el contenido */
+    padding: 0 2cm; /* Padding interno para el margen */
 }
 
+/* Estilo para textos justificados */
 .texto-justificado {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra el contenido del contenedor flex */
-    text-align: justify; /* Justifica el texto dentro del contenedor */
+    display: flex; /* Modelo de diseño flexbox */
+    flex-direction: column; /* Direcciona los elementos en columna */
+    align-items: center; /* Alinea el contenido al centro */
+    text-align: justify; /* Justifica el texto */
 }
 
-/* Estilo del pie de página */
+/* Estilo para el pie de página */
 .footer {
-    background-color: #ffffff !important; /* Color de fondo blanco */
-    color: #b00c0c !important; /* Color del texto negro */
+    background-color: #C21602 !important; /* Color de fondo rojo */
+    color: #000000 !important; /* Color del texto negro */
 }
 
+/* Estilo para la sección de derechos en el pie de página */
 .derechos {
-    background-color: #b00c0c !important;
-    color: #ffffff !important; /* Color del texto negro */
+    background-color: #C21602 !important; /* Color de fondo rojo */
+    color: #000000 !important; /* Color del texto negro */
+    padding: 30px 0; /* Padding superior e inferior */
 }
 
-
-
-/* Estilo para íconos de redes sociales */
+/* Estilo para los iconos sociales */
 .social-icons {
-    display: flex;
-    justify-content: center; /* Centra los íconos horizontalmente */
-    align-items: center; /* Alinea los íconos verticalmente en el centro si es necesario */
-    flex-wrap: wrap; /* Permite que los íconos se envuelvan si hay espacio limitado */
-    margin-top: 20px; /* Margen superior para separación */
+    display: flex; /* Diseño flexbox */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px; /* Espacio entre los iconos */
+    padding: 30px 0; /* Padding superior e inferior */
+    background-color: #C21602; /* Color de fondo rojo */
 }
 
+/* Estilo para enlaces de iconos sociales */
 .social-icons a {
-    margin: 0 20px; /* Espaciado horizontal entre íconos (aumentado a 20px) */
-    display: inline-flex; /* Asegura que el enlace se ajuste al tamaño del ícono */
-    align-items: center; /* Alinea los íconos verticalmente en el centro */
-    justify-content: center; /* Centra el ícono dentro del enlace */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del elemento padre */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves para el cambio de tamaño y color */
 }
 
+/* Tamaño de los iconos */
 .iconos {
-    font-size: 50rem; /* Tamaño de los íconos */
-    color: #C21602; /* Color de los íconos */
-    transition: color 0.3s ease; /* Transición suave en hover */
-    margin-left: 35px; /* Margen izquierdo */
-    margin-right: 35px; /* Margen derecho */
-    display: flex; /* Usamos Flexbox para centrar los íconos */
-    justify-content: center; /* Centra los íconos horizontalmente */
-    gap: 20px; /* Espacio entre los íconos */
+    font-size: 50px; /* Tamaño de los iconos */
 }
 
-.iconos:hover {
-    color: #000; /* Color de los íconos al hacer hover */
+/* Efecto hover para los iconos sociales */
+.social-icons a:hover .iconos {
+    transform: scale(1.3); /* Aumenta el tamaño de los iconos al pasar el ratón */
+    color: #ffffff; /* Cambia el color de los iconos al blanco */
 }
 
+/* Clase para agregar margen superior personalizado */
 .margin-top-custom {
-    margin-top: 2rem; /* Ajusta este valor según lo que necesites */
+    margin-top: 2rem; /* Margen superior personalizado */
+}
+
+/* Estilo para descripciones de productos */
+.descripcion {
+    color: #000; /* Color del texto negro */
 }
