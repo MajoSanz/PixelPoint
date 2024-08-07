@@ -1,0 +1,244 @@
+/* Aplica la fuente 'Barlow Condensed' a todo el documento */
+body {
+    font-family: 'Barlow Condensed', sans-serif; /* Define la fuente principal del documento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    line-height: 1.5; /* Define la altura de línea para el texto */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+/* Asegura que todos los textos hereden la fuente del body */
+h1, h2, h3, h4, h5, h6, p, a, li, div, span {
+    font-family: inherit; /* Hereda la fuente del elemento padre (body) */
+}
+
+/* Estilo para la clase 'justificado' */
+.justificado {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Centra el elemento dentro de su contenedor */
+    max-width: 1500px; /* Establece un ancho máximo para el elemento */
+    font-size: 30px; /* Tamaño de fuente del texto */
+    line-height: 1.8; /* Altura de línea para mejorar la legibilidad */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra al texto */
+    margin-bottom: 30px; /* Espacio debajo del elemento */
+}
+
+/* Estilo para la clase 'contenido' */
+.contenido {
+    display: flex; /* Utiliza Flexbox para alinear el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para la clase 'text-superior' y 'color-precio' */
+.text-superior, .color-precio {
+    color: #C21602; /* Color del texto */
+    font-weight: bold; /* Texto en negritas */
+}
+
+/* Define el margen para el contenedor principal */
+.main-container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 3cm auto 0; /* Centra el contenedor horizontalmente con un margen superior */
+    padding: 0 20px; /* Padding interno para el margen */
+}
+
+/* Estilo para la clase 'letra-titulo' */
+.letra-titulo {
+    font-size: 150%; /* Tamaño de fuente relativo */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* Estilo para la clase 'container' */
+.container {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 0 2cm; /* Relleno interno a la izquierda y derecha */
+}
+
+/* Estilo para la clase 'texto-justificado' */
+.texto-justificado {
+    display: flex; /* Utiliza Flexbox para alinear el contenido */
+    flex-direction: column; /* Alinea el contenido en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: #040404 !important; /* Color de fondo negro */
+    color: #000000 !important; /* Color del texto negro */
+}
+
+/* Estilo para la clase 'derechos' en el pie de página */
+.derechos {
+    background-color: #C21602 !important; /* Color de fondo rojo */
+    color: #000000 !important; /* Color del texto negro */
+}
+
+/* Estilo para la Sección de Contacto */
+#contacto {
+    padding: 30px 1; /* Relleno interno */
+}
+
+#contacto h2 {
+    margin-bottom: 20px; /* Espaciado debajo del elemento */
+}
+
+.contact-info h3 {
+    margin-bottom: 20px; /* Espaciado debajo del elemento */
+    font-size: 1.5rem; /* Tamaño de fuente */
+}
+
+.contact-info ul {
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0; /* Elimina el relleno interno */
+}
+
+.contact-info ul li {
+    margin-bottom: 15px; /* Espaciado debajo de cada elemento de lista */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    display: flex; /* Alinea el contenido en línea */
+    align-items: flex-start; /* Alinea verticalmente los elementos */
+}
+
+.contact-info ul li i {
+    font-size: 1.5rem; /* Tamaño de fuente para los íconos */
+    margin-right: 10px; /* Espaciado a la derecha del ícono */
+    color: #C21602; /* Color de los íconos */
+    display: inline-block; /* Asegura que el ícono esté en línea */
+    vertical-align: middle; /* Alineación vertical media */
+}
+
+.contact-info ul li a {
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    color: #000; /* Color del texto */
+    font-style: normal; /* Estilo de fuente normal */
+    margin: 0; /* Elimina los márgenes adicionales */
+    display: inline-block; /* Asegura que el texto esté en línea */
+}
+
+.contact-info ul li address {
+    font-style: normal; /* Estilo de fuente normal */
+    margin: 0; /* Elimina los márgenes adicionales */
+    display: inline; /* Asegura que el texto esté en línea */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    text-align: justify; /* Justifica el texto */
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000; /* Color del texto */
+}
+
+/* Estilo para la línea divisoria */
+.divider {
+    border-left: 1px solid #dee2e6; /* Línea vertical delgada */
+    height: 100%; /* Altura del 100% del contenedor */
+    margin: 0; /* Elimina los márgenes adicionales */
+    padding: 0; /* Elimina el relleno interno */
+}
+
+/* Estilo para el mapa responsivo */
+.map-responsive {
+    overflow: hidden; /* Oculta el desbordamiento del contenido */
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    position: relative; /* Posiciona el elemento relativamente */
+    height: 0; /* Altura inicial de cero */
+}
+
+.map-responsive iframe {
+    position: absolute; /* Posiciona el iframe absolutamente */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Altura completa del contenedor */
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-icons {
+    display: flex; /* Utiliza Flexbox para alinear los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Alinea los íconos verticalmente */
+    flex-wrap: wrap; /* Permite que los íconos se envuelvan en múltiples líneas */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.social-icons a {
+    margin: 0 20px; /* Espaciado horizontal entre íconos */
+    display: inline-flex; /* Asegura que el enlace se ajuste al tamaño del ícono */
+    align-items: center; /* Alinea los íconos verticalmente */
+    justify-content: center; /* Centra el ícono dentro del enlace */
+}
+
+/* Estilo para la clase 'iconos' */
+.iconos {
+    font-size: 50px; /* Tamaño de los íconos */
+    color: #C21602; /* Color de los íconos */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+    margin-left: 35px; /* Margen a la izquierda */
+    margin-right: 35px; /* Margen a la derecha */
+    display: flex; /* Utiliza Flexbox para centrar los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 20px; /* Espacio entre los íconos */
+}
+
+.iconos:hover {
+    color: #000; /* Color de los íconos al pasar el cursor */
+}
+
+/* Clase personalizada para margen superior */
+.margin-top-custom {
+    margin-top: 2rem; /* Ajusta el margen superior según lo necesario */
+}
+
+/* Estilo del formulario */
+.contact-form {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
+    color: #000;
+}
+
+.contact-form form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form .mb-3 {
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-label {
+    font-size: 1rem;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #C21602;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #a01502;
+}
+
+/* Estilo para la clase 'message' */
+.message {
+    margin: 50px 0; /* Espaciado arriba y abajo del elemento */
+    padding: 50px 0; /* Relleno interno arriba y abajo del elemento */
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el contenedor horizontalmente */
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    background-color: #C21602; /* Color de fondo */
+    color: antiquewhite; /* Color del texto */
+}
